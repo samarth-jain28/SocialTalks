@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        {%if title%}
+        <title>{{ title }}-SocialTalks</title>
+        {%else%}
+        <title>SocialTalks</title>
+        {%endif%}
+    </head>
+    <body>
+        <nav>SocialTalks: <a href="/index">Home</a></nav>
+        <hr>
+        {% block con %}
+        {% endblock %}            
+    </body>
+</html>

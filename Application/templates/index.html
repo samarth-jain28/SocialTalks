@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>{{title}}-SocialTalks</title>
-    </head>
-    <body>
-        <h1>Hello, {{user.username}}!</h1>
-    </body>
-</html>
+{% extends 'base.html' %}
+{% block con %}
+<h1>Hello, {{user.username}}!</h1>
+{% for p in post %}
+<div><p>{{p.author}} says- <b>{{p.body}}</b></p></div>
+{% endfor %}
+{% endblock %}
