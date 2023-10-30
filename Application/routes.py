@@ -18,7 +18,7 @@ def index():
     ]
     return render_template('index.html',title='HomePage', user=user, post=posts)
 
-@app.route('/login')
+@app.route('/login' , methods=['GET' , 'POST'])
 def login():
     form = LoginForm()
     return render_template('login.html' ,title='SignIn' ,form = form)
